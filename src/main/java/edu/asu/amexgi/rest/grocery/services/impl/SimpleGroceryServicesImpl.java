@@ -35,6 +35,7 @@ public class SimpleGroceryServicesImpl implements GroceryServices {
 				put("BRC", new GroceryItem("BRC", "broccoli", GroceryType.PRODUCE, 1.19f));
 				put("PAS", new GroceryItem("PAS", "pastrami", GroceryType.DELI, 8.99f));
 				put("HAM", new GroceryItem("HAM", "ham", GroceryType.PRODUCE, 5.69f));
+				put("SAL", new GroceryItem("SAL", "salami", GroceryType.DELI, 8.69f));
 		}};
 	}
 
