@@ -14,7 +14,7 @@ public class GroceryItem {
 	}
 
 	public static enum GroceryType {
-		DAIRY, BREADS, DELI, PRODUCE
+		DAIRY, BREADS, DELI, PRODUCE, PASTA
 	}
 	
 	public String getId() {
