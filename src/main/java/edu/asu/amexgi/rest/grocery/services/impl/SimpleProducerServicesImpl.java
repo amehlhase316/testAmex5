@@ -23,7 +23,7 @@ public class SimpleProducerServicesImpl implements ProducerServices {
 	
 	@SuppressWarnings("serial")
 	private SimpleProducerServicesImpl() {
-		//let's create some mock data
+		//let's create some mock data -- pretend this is another fix needed
 		__producers = new HashMap<String, Producer>() {{
 				put("LOL", new Producer("LOL", "Land O Lakes", "1 Milky Way"));
 				put("LUCR", new Producer("LUCR", "Lucerne", "100 Over the Moon Road"));
