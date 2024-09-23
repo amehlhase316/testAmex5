@@ -41,6 +41,7 @@ public class SimpleProducerServicesImpl implements ProducerServices {
 		} catch (Throwable t) {
 			// why do we handle unchecked exceptions? In writing the most robust code we
 			// should always trap anything that could make it back through our response pipeline
+			// Pretend this is an amazing change 1
 			throw new Exception(t);
 		}
 	}
