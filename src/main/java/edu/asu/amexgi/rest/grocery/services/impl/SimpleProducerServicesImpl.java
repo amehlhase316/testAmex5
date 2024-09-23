@@ -31,6 +31,7 @@ public class SimpleProducerServicesImpl implements ProducerServices {
 				put("RUBN", new Producer("RUBN", "Ruben's Bread", "279 Wonderborad Avenue"));
 				put("FRUT", new Producer("FRUT", "Frumpy Fruit", "12 I Prefer Cheezits Way"));
 				put("BRHD", new Producer("BRHD", "Boar's Head", "33 Urboring Lane"));
+				put("MILK", new Producer("MILK", "Shamrock Mil", "2 Milky Way"));
 		}};
 	}
 
