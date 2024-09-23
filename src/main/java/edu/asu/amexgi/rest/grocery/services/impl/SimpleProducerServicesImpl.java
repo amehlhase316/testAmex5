@@ -25,7 +25,7 @@ public class SimpleProducerServicesImpl implements ProducerServices {
 	private SimpleProducerServicesImpl() {
 		//let's create some mock data
 		__producers = new HashMap<String, Producer>() {{
-				put("LOLK", new Producer("LOLK", "Land O Lakes", "1 Milky Way"));
+				put("LOLK", new Producer("LOLK", "Land O Lakes", "55 Milky Way"));
 				put("LUCR", new Producer("LUCR", "Lucerne", "100 Over the Moon Road"));
 				put("YOPL", new Producer("YOPL", "Yoplait", "333 Yogurt is disgusting street"));
 				put("RUBN", new Producer("RUBN", "Ruben's Bread", "279 Wonderborad Avenue"));
