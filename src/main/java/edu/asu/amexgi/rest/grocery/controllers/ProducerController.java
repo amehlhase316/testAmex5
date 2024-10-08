@@ -22,7 +22,7 @@ import edu.asu.amexgi.rest.grocery.model.Producer;
 import edu.asu.amexgi.rest.grocery.services.ProducerServices;
 
 @RestController
-@RequestMapping("/api/producers")
+@RequestMapping("/api/producers") //test
 public class ProducerController {
 	private ProducerServices __ProducerService = null;
 	
