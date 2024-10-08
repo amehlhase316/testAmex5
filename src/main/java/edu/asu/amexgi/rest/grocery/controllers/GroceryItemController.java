@@ -46,10 +46,17 @@ public class GroceryItemController {
 		}
 	}
 
+
 	@GetMapping("/price/{price}")
 	public List<GroceryItem> getGroceryItemsByPrice(@PathVariable("price") float price) throws Exception {
 		System.out.println(price);
 			return __groceryService.findByPrice(price);
+	}
+
+	@GetMapping("health/{health}") // pretend this is a hotfix
+	public List<GroceryItem> getGroceryItemByHealth(@PathVariable("health") boolean health) throws Exception {
+		return __groceryService.findByHealth(health);
+
 	}
 	
 	@SuppressWarnings("unused")
