@@ -19,7 +19,12 @@ public interface GroceryServices {
 	// custom query methods
 	public List<GroceryItem> findByCategory(GroceryType category);
 
+
+	List<GroceryItem> findByPrice(float price);
+	
+
 	public List<GroceryItem> findByHealth(boolean health);
+
 	// normally we would implement a configurable logic to decide our service implementation
 	public static GroceryServices getGroceryService() {
 		try {
@@ -33,4 +38,6 @@ public interface GroceryServices {
 			return null;
 		}
 	}
+
+
 }
