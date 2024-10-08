@@ -45,6 +45,11 @@ public class GroceryItemController {
 			return __groceryService.findByCategory(type);
 		}
 	}
+
+	@GetMapping("health/{health}") // pretend this is a hotfix
+	public List<GroceryItem> getGroceryItemByHealth(@PathVariable("health") boolean health) throws Exception {
+		return __groceryService.findByHealth(health);
+	}
 	
 	@SuppressWarnings("unused")
 	@PostMapping
