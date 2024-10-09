@@ -69,7 +69,7 @@ jobs:
 
       - name: Run testLong (Other branches)
         if: github.ref != 'refs/heads/T3main'
-        run: ./gradlew test --tests *testLong
+        run: ./gradlew testLong
 
 
   dependency-submission:
