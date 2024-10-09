@@ -21,3 +21,21 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+
+tasks.register('testFast', Test) {
+	useJUnitPlatform() //
+	testClassesDirs = sourceSets.test.output.classesDirs
+	classpath = sourceSets.test.runtimeClasspath
+	filter {
+		includeTestsMatching 'edu.asu.amexgi.rest.grocery.controllers.GroceryControllerTest2'
+	}
+}
+
+tasks.register('testLong', Test) {
+	useJUnitPlatform() //
+	testClassesDirs = sourceSets.test.output.classesDirs
+	classpath = sourceSets.test.runtimeClasspath
+	filter {
+		includeTestsMatching 'edu.asu.amexgi.rest.grocery.controllers.GroceryApi1ApplicationTests'
+	}
+}
